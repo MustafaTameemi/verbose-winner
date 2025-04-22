@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecting to Iraq Gate App...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    window.onload = function () {
+      const ua = navigator.userAgent;
+      if (/android/i.test(ua)) {
+        window.location.href = "https://play.google.com/store/apps/details?id=iraqsoft.iraqgate.app";
+      } else if (/iPad|iPhone|iPod/.test(ua)) {
+        window.location.href = "https://apps.apple.com/us/app/iraq-gate/id6738303773";
+      } else {
+        document.getElementById("fallback").style.display = "block";
+      }
+    };
+  </script>
+</head>
+<body>
+  <h2>Redirecting to Iraq Gate App...</h2>
+  <p id="fallback" style="display:none;">
+    If you're not redirected, choose manually:<br>
+    <a href="https://apps.apple.com/us/app/iraq-gate/id6738303773">iOS App Store</a><br>
+    <a href="https://play.google.com/store/apps/details?id=iraqsoft.iraqgate.app">Google Play Store</a>
+  </p>
+</body>
+</html>
